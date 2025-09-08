@@ -28,6 +28,12 @@ variable "private_subnet_cidrs" {
   default = [ "10.20.10.0/24","10.20.11.0/24" ]
 }
 
+variable "instance_type" {
+  description = "EC2 Instance Type"
+  type = string
+  default = "t3.micro"
+}
+
 variable "desired_capacity" {
   description = "Auto-Scaling Group Desired Capacity"
   type = number
